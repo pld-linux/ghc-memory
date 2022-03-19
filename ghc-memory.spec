@@ -15,17 +15,17 @@ Source0:	http://hackage.haskell.org/package/%{pkgname}-%{version}/%{pkgname}-%{v
 URL:		http://hackage.haskell.org/package/memory
 BuildRequires:	ghc >= 6.12.3
 BuildRequires:	ghc-basement >= 0.0.7
-BuildRequires:	ghc-deepseq >=1.1
+BuildRequires:	ghc-deepseq >= 1.1
 %if %{with prof}
 BuildRequires:	ghc-prof
 BuildRequires:	ghc-basement-prof >= 0.0.7
-BuildRequires:	ghc-deepseq-prof >=1.1
+BuildRequires:	ghc-deepseq-prof >= 1.1
 %endif
 BuildRequires:	rpmbuild(macros) >= 1.608
 %requires_eq	ghc
 Requires(post,postun):	/usr/bin/ghc-pkg
 Requires:	ghc-basement >= 0.0.7
-Requires:	ghc-deepseq >=1.1
+Requires:	ghc-deepseq >= 1.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # debuginfo is not useful for ghc
@@ -51,7 +51,7 @@ Summary(pl.UTF-8):	Biblioteka profilująca %{pkgname} dla GHC
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	ghc-basement-prof >= 0.0.7
-Requires:	ghc-deepseq-prof >=1.1
+Requires:	ghc-deepseq-prof >= 1.1
 
 %description prof
 Profiling %{pkgname} library for GHC.  Should be installed when

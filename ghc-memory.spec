@@ -6,7 +6,7 @@
 Summary:	Memory and related abstraction stuff
 Name:		ghc-%{pkgname}
 Version:	0.15.0
-Release:	1
+Release:	
 License:	BSD
 Group:		Development/Languages
 #Source0Download: http://hackage.haskell.org/package/memory
